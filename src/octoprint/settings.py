@@ -114,6 +114,7 @@ default_settings = {
 		"additionalPorts": [],
 		"additionalBaudrates": [],
 		"longRunningCommands": ["G4", "G28", "G29", "G30", "G32", "M400", "M226", "M600"],
+		"bufferedCommands": ["G0", "G1", "G2", "G3", "G10", "G11", "G20", "G21", "G42", "G53", "G54", "G55", "G56", "G57", "G58", "G59", "G90", "G91", "G92", "M3", "M4", "M5", "M104", "M106", "M107", "M117", "M140"],
 		"blockedCommands": ["M0", "M1"],
 		"pausingCommands": ["M0", "M1", "M25"],
 		"emergencyCommands": ["M112", "M108", "M410"],
@@ -152,7 +153,8 @@ default_settings = {
 			"autoreport_temp": True,
 			"autoreport_sdstatus": True,
 			"busy_protocol": True,
-			"emergency_parser": True
+			"emergency_parser": True,
+			"advanced_ok_protocol": True
 		},
 
 		# command specific flags
